@@ -1,8 +1,6 @@
 .heading2Xl {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
   margin: 1rem 0;
 }
 
@@ -14,8 +12,10 @@
   margin: 1rem 0;
 }
 
+/* for sub headings  */
 .headingLg {
   font-size: 1.5rem;
+  font-weight: 100px;
   line-height: 1.4;
   margin: 1rem 0;
 }
@@ -23,6 +23,14 @@
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.headingMain {
+  font-size: 1.5rem;
+  font-weight: 100px;
+  line-height: 1.4;
+  margin: 1rem 0;
+  padding-left: 10px;
 }
 
 .borderCircle {
@@ -49,4 +57,8 @@
 
 .lightText {
   color: #666;
+}
+
+.test {
+  font-size: 10px;
 }

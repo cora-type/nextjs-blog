@@ -1,15 +1,21 @@
 .container {
-  max-width: 36rem;
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  padding: 0 2rem;
+  margin: 1rem auto;
 }
 
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.name {
+  padding-left: 1rem;
+}
+
 .backToHome {
-  margin: 3rem 0 0;
+  margin: 2rem 0 0;
 }
