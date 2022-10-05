@@ -13,19 +13,29 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={36}
-              width={36}
-              alt={name}
-            />
-            <div className={utilStyles.headingMain}>
+            <div className={styles.navLeft}>
+              <div className={styles.user}>
+                <Image
+                  priority
+                  src="/images/profile.jpg"
+                  className={utilStyles.borderCircle}
+                  height={36}
+                  width={36}
+                  alt={name}
+                />
+                <div className={styles.names}>
+                  <span className={styles.name}>verloxs</span>
+                  <span className={styles.about}>the stars, like dust.</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.themeToggle}>TOGGLE</div>
+
+            {/* <div className={utilStyles.headingMain}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </div>
+            </div> */}
           </>
         ) : (
           // after you click a link styling for header
@@ -61,3 +71,13 @@ export default function Layout({ children, home }) {
     </div>
   );
 }
+
+// <section
+//   className={`${utilStyles.headingMd} ${utilStyles.headerContainer}`}
+// >
+//   <div className={utilStyles.navLeft}>
+//     <div className={utilStyles.user}></div>
+//   </div>
+
+//   <div className={utilStyles.themeToggle}>placeholder</div>
+// </section>;
