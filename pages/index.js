@@ -13,7 +13,9 @@ export default function Home({ allPostsData, allProjectsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>placeholder</p>
+        <Link href={`/posts/`}>
+          <a>Posts</a>
+        </Link>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -36,7 +38,9 @@ export default function Home({ allPostsData, allProjectsData }) {
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/redview">
-              <a className={utilStyles.listItem}>coalesce</a>
+              <a target="_blank" className={utilStyles.listItem}>
+                coalesce
+              </a>
             </Link>
             <br />
             <div className={utilStyles.lightText}>

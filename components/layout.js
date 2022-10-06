@@ -71,13 +71,3 @@ export default function Layout({ children, home }) {
     </div>
   );
 }
-
-// <section
-//   className={`${utilStyles.headingMd} ${utilStyles.headerContainer}`}
-// >
-//   <div className={utilStyles.navLeft}>
-//     <div className={utilStyles.user}></div>
-//   </div>
-
-//   <div className={utilStyles.themeToggle}>placeholder</div>
-// </section>;
