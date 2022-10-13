@@ -1,23 +1,29 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
+import Abuse from "/public/images/abuse.svg";
 
 import Link from "next/link";
-import Date from "../components/date";
 
-export default function Home({ allPostsData, allProjectsData }) {
+export default function Home() {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <Link href={`/posts/`}>
-          <a>Posts</a>
-        </Link>
+      <section>
+        <div className="postsLink">
+          <Link href={`/blog/`}>
+            <div
+              className={`${utilStyles.headingMd} ${utilStyles.padding1px} posts`}
+            >
+              Blog
+              <Abuse className="verbal-abuse" />
+            </div>
+          </Link>
+        </div>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -32,7 +38,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>
@@ -77,12 +83,12 @@ export default function Home({ allPostsData, allProjectsData }) {
   );
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+// export async function getStaticProps() {
+//   const allPostsData = getSortedPostsData();
 
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   };
+// }

@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import Breadcrumbs from "nextjs-breadcrumbs";
 
 const name = "verloxs";
 export const siteTitle = "the stars, like dust.";
@@ -62,6 +63,16 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+
+      <div className="breadcrumbs-container">
+        <Breadcrumbs
+          containerClassName="bread"
+          listClassName="breadcrumbs"
+          // labelsToUppercase="true"
+          inactiveItemClassName="bread-inactive"
+          rootLabel="home"
+        />
+      </div>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

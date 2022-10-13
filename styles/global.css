@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
   font-size: 12px;
   background-color: #151618;
+  color: wheat;
 }
 
 * {
@@ -37,4 +38,53 @@ img {
 
 h2 {
   font-weight: 600;
+}
+
+.verbal-abuse {
+  fill: white;
+  height: 36px;
+  width: 36px;
+}
+
+.postsLink {
+  cursor: pointer;
+}
+
+.posts {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.breadcrumbs-container {
+  padding: 10px 28px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #666;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  padding: 5px;
+}
+
+.bread-inactive > a {
+  color: #666666;
 }
