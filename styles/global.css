@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #a5c9ca;
+  color: #839eae;
   text-decoration: none;
 }
 main {
@@ -66,11 +66,12 @@ h2 {
   align-items: center;
 }
 
-.breadcrumbs {
+.breadcrumbs > * {
   list-style: none;
+  padding: 5px;
 }
 
-ol {
+.breadcrumbs {
   margin: 0;
   padding: 0;
   line-height: inherit;
@@ -79,10 +80,6 @@ ol {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-}
-
-li {
-  padding: 5px;
 }
 
 .bread-inactive > a {
