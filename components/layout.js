@@ -4,6 +4,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Breadcrumbs from "nextjs-breadcrumbs";
+import Footer from "./footer";
 
 const name = "verloxs";
 export const siteTitle = "the stars, like dust.";
@@ -31,8 +32,6 @@ export default function Layout({ children, home }) {
               </div>
             </div>
             <div className={styles.themeToggle}>TOGGLE</div>
-
-            {}
           </>
         ) : (
           // after you click a link styling for header
@@ -74,13 +73,7 @@ export default function Layout({ children, home }) {
         />
       </div>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <Footer />
     </div>
   );
 }
