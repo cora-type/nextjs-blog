@@ -6,7 +6,7 @@ import Link from "next/link";
 import Breadcrumbs from "nextjs-breadcrumbs";
 import Footer from "./footer";
 
-const name = "verloxs";
+const name = "cora";
 export const siteTitle = "the stars, like dust.";
 
 export default function Layout({ children, home }) {
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
                   alt={name}
                 />
                 <div className={styles.names}>
-                  <span className={styles.name}>verloxs</span>
+                  <span className={styles.name}>cora</span>
                   <span className={styles.about}>the stars, like dust.</span>
                 </div>
               </div>
@@ -34,7 +34,7 @@ export default function Layout({ children, home }) {
             <div className={styles.themeToggle}>TOGGLE</div>
           </>
         ) : (
-          // after you click a link styling for header
+          // header styling for links that aren't home
           <>
             <Link href="/">
               <a>
@@ -49,7 +49,7 @@ export default function Layout({ children, home }) {
                       alt={name}
                     />
                     <div className={styles.names}>
-                      <span className={styles.name}>verloxs</span>
+                      <span className={styles.name}>cora</span>
                       <span className={styles.about}>
                         the stars, like dust.
                       </span>
@@ -62,13 +62,12 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-
       <div className="breadcrumbs-container">
         <Breadcrumbs
           containerClassName="bread"
           listClassName="breadcrumbs"
-          // labelsToUppercase="true"
           inactiveItemClassName="bread-inactive"
+          activeItemClassName="bread-active"
           rootLabel="home"
         />
       </div>

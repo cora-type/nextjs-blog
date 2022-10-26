@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 main {
-  padding: 100px 28px;
+  padding: 80px 28px;
   max-width: 641px;
 }
 
@@ -68,7 +68,7 @@ h2 {
 
 .breadcrumbs > * {
   list-style: none;
-  padding: 5px;
+  padding-right: 5px;
 }
 
 .breadcrumbs {
@@ -84,4 +84,8 @@ h2 {
 
 .bread-inactive > a {
   color: #666666;
+}
+
+.bread-active > a {
+  color: #fff;
 }
