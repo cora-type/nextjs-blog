@@ -50,9 +50,7 @@ export default function Layout({ children, home }) {
                     />
                     <div className={styles.names}>
                       <span className={styles.name}>cora</span>
-                      <span className={styles.about}>
-                        the stars, like dust.
-                      </span>
+                      <span className={styles.about}>the stars, like dust.</span>
                     </div>
                   </div>
                 </div>
@@ -72,7 +70,7 @@ export default function Layout({ children, home }) {
         />
       </div>
       <main>{children}</main>
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 }
