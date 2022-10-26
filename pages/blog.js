@@ -1,15 +1,12 @@
 import Layout from "../components/layout";
-import { format, formatDistance, formatRelative, subDays } from "date-fns";
+import { format, formatDistance, formatRelative, subDays, addDays } from "date-fns";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 
 import React from "react";
 
-let today = () => {
-  console.log(new Date());
-  return formatRelative(subDays(new Date(), 5), new Date());
-};
+const calendar = (todate) => formatRelative(addDays(new Date(todate), 1), new Date());
 
 // Blog page
 export default function Blog({ allPostsData }) {
@@ -25,7 +22,7 @@ export default function Blog({ allPostsData }) {
                 <a>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>{today()}</small>
+              <small className={utilStyles.lightText}>{calendar(date)}</small>
             </li>
           ))}
         </ul>

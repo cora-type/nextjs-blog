@@ -1,6 +1,6 @@
 ---
 title: "Summer 2022 Recap"
-date: "2022-10-20"
+date: "2022-10-20 7:00"
 ---
 
 <!-- Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
