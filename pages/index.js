@@ -14,9 +14,7 @@ export default function Home() {
       <section>
         <div className="postsLink">
           <Link href={`/blog/`}>
-            <div
-              className={`${utilStyles.headingMd} ${utilStyles.padding1px} posts`}
-            >
+            <div className={`${utilStyles.headingMd} ${utilStyles.padding1px} posts`}>
               Blog
               <Abuse className="verbal-abuse" />
             </div>
@@ -43,9 +41,9 @@ export default function Home() {
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
-            <Link href="https://github.com/verloxs/redview">
+            <Link href="https://github.com/verloxs/coaless">
               <a target="_blank" className={utilStyles.listItem}>
-                coalesce
+                coaless
               </a>
             </Link>
             <br />
