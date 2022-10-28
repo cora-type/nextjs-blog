@@ -1,12 +1,13 @@
 import Layout from "../components/layout";
-import { format, formatDistance, formatRelative, subDays, addDays } from "date-fns";
+import { formatRelative, addDays } from "date-fns";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 
 import React from "react";
 
-const calendar = (todate) => formatRelative(addDays(new Date(todate), 1), new Date());
+const calendar = (todate) =>
+  formatRelative(addDays(new Date(todate), 1), new Date());
 
 // Blog page
 export default function Blog({ allPostsData }) {

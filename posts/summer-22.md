@@ -1,19 +1,16 @@
 ---
 title: "Summer 2022 Recap"
-date: "2022-10-20 7:00"
+date: "2022-10-20"
 ---
-
-<!-- Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
-
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others. -->
 
 **JULY**
 
-Most of my time was spent brushing up on some basics & essentials that really just helped strengthen my foundations. Even with my college experience, it's clear to me now how approachable programming is for people who have never even seen code before. I guess college's emphasis on Data Structures & Algorithms scares a lot of people, when in reality thats only a very small part of whats actually done when building things. Realistically, I should have built these basic apps years ago, like the to-do list, but I guess I never saw the value in it - till now at least.
+Ironically I built and learned more about web development this month than I ever did in college. I feel like college focuses way too much on DS/A, but given how proficiency in DS/A usually ends up being the deciding factor between whether you get a job or not in most cases I can't fault it for doing so.
 
 **AUGUST**
 
-Built a simple tool using Reddit's API and a Python script TO make Google-Reddit searches easier.
+Built Coalesce. Really fun and kind of challenging, but useful to me and I still use it myself to this day. Looking back especially at the design, I think I did a bit too much with the font and logo but I'm no designer, yet.
+
+**SEPTEMBER**
+
+Being a turtle and just staying home all day programming took it's toll I guess. Mental health issues kinda crept up on me and I somehow managed to get Insomnia 🥴. Working through it without medication was rough but I've always been very adamant on not tuning the brain with drugs that even the researchers involved in making it have no idea the extent to which it affects the brain. Funnily enough I guess I was right considering not a few weeks later a massive study came out about anti-depressants possibly being a complete farce and having no more of an impact than a placebo pill. Personally, I went from having nights where I would sleep 30 minutes - 2 hours max after struggling to even fall asleep for hours, to now where I sleep nearly instantly and only awake 1-2 times. The Calm app, more specifically Jay Shetty, played a big role in getting where I am right now.
