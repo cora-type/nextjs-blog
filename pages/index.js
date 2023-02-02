@@ -17,7 +17,7 @@ export default function Home() {
             <div
               className={`${utilStyles.headingMd} ${utilStyles.padding1px} posts`}
             >
-              blog
+              noise
               <Image
                 priority
                 src="/images/absurd.png"
@@ -50,7 +50,7 @@ export default function Home() {
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/coaless">
-              <div target="_blank" className={utilStyles.listItem}>
+              <div target="_blank" className={utilStyles.listItemTitle}>
                 coaless
               </div>
             </Link>
@@ -65,19 +65,19 @@ export default function Home() {
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={utilStyles.listItem}>to do</div>
+              <div className={utilStyles.listItemTitle}>to do</div>
             </Link>
             <div className={utilStyles.lightText}>self explanatory</div>
           </li>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={utilStyles.listItem}>calculator</div>
+              <div className={utilStyles.listItemTitle}>calculator</div>
             </Link>
             <div className={utilStyles.lightText}>self explanatory</div>
           </li>
-          <li className={utilStyles.listItem}>
+          <li className={utilStyles.listItemTitle}>
             <Link href="https://github.com/verloxs/etch-a-sketch">
-              <div className={utilStyles.listItem}>etch a sketch</div>
+              <div className={utilStyles.listItemTitle}>etch a sketch</div>
             </Link>
             <div className={utilStyles.lightText}>self explanatory</div>
           </li>

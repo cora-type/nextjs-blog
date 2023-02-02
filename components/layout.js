@@ -58,7 +58,7 @@ export default function Layout({ children, home }) {
                 </div>
               </div>
             </Link>
-            <div className={styles.themeToggle}>TOGGLE</div>
+            {/* <div className={styles.themeToggle}>TOGGLE</div> */}
           </>
         )}
       </header>

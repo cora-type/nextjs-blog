@@ -10,15 +10,16 @@ export default function Blog({ allPostsData }) {
   return (
     <Layout>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>blog</h2>
-        <div className={utilStyles.lightText}>just noise</div>
+        <div className="">
+          <h2 className={utilStyles.headingLg}>noise</h2>
+        </div>
+        <div className={utilStyles.lightText}>'blog'</div>
         <ul className={`${utilStyles.list} ${utilStyles.spacing}`}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/blog/${id}`}>
-                <div>{title}</div>
+                <div className={utilStyles.blogTitle}>{title}</div>
               </Link>
-              <br />
               <small className={utilStyles.lightText}>"date"</small>
             </li>
           ))}

@@ -1,7 +1,19 @@
-.heading2Xl {
-  font-size: 2rem;
-  line-height: 1.2;
-  margin: 1rem 0;
+/* Headings  */
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #323232;
+  font-weight: 300;
+}
+
+.headingLg {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+  color: #323232;
+  letter-spacing: -0.01125rem;
 }
 
 .headingXl {
@@ -11,14 +23,10 @@
   letter-spacing: -0.05rem;
   margin: 1rem 0;
 }
-
-/* for sub headings  */
-.headingLg {
-  font-size: 16px;
-  line-height: 1.4;
-  margin: 0.5rem 0;
-  color: rgb(0, 0, 0);
-  letter-spacing: -0.01125rem;
+.heading2Xl {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 1rem 0;
 }
 
 .headingMain {
@@ -28,24 +36,28 @@
   line-height: 1.4;
 }
 
+/* header  */
+
+.user {
+  display: inline-flex;
+  padding: 0 8pt;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+}
+
 .borderCircle {
   border-radius: 9999px;
   display: inline-block;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(128, 128, 128);
   border-radius: 50%;
   vertical-align: top;
 }
 
-.colorInherit {
-  color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
-  margin-bottom: 2rem;
-}
+/* list styles */
 
 .list {
   list-style: none;
@@ -54,16 +66,22 @@
 }
 
 .listItem {
-  margin: 16px 0px 0px;
-
-  color: #ffd078;
+  margin-bottom: 16px;
   /* color: #ffce44; */
 }
 
-.headingMd {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: rgb(0, 0, 0);
+.listItemTitle {
+  margin-bottom: 0;
+  color: #ffd078;
+}
+
+.blogTitle {
+  color: #049494;
+}
+
+.padding1px {
+  padding-top: 1px;
+  margin-bottom: 2rem;
 }
 
 .lightText {
@@ -80,15 +98,6 @@
   align-items: center;
   line-height: 1;
   flex-direction: row;
-}
-
-.user {
-  display: inline-flex;
-  padding: 0 8pt;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  max-width: 100%;
 }
 
 .spacing {
