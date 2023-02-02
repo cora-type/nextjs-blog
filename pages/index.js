@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import styles from "../styles/home.module.css";
 import Image from "next/image";
 
 import Link from "next/link";
@@ -12,11 +12,9 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <div className="postsLink">
+        <div className={styles.blogContainer}>
           <Link href={`/blog/`}>
-            <div
-              className={`${utilStyles.headingMd} ${utilStyles.padding1px} posts`}
-            >
+            <div className={styles.padding1px}>
               noise
               <Image
                 priority
@@ -29,57 +27,57 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+      {/* <section className={`${styles.headingMd} ${styles.padding1px}`}>
+        <h2 className={styles.homeHeading}>Blog</h2>
+        <ul className={styles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className={styles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <div >{title}</div>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small className={styles.about}>
                 <Date dateString={date} />
               </small>
             </li>
           ))}
         </ul>
       </section> */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>projects</h2>
-        <ul className={utilStyles.list}>
-          <li className={utilStyles.listItem}>
+      <section className={styles.homeSection}>
+        <h2 className={styles.homeHeading}>projects</h2>
+        <ul className={styles.list}>
+          <li className={styles.listItem}>
             <Link href="https://github.com/verloxs/coaless">
-              <div target="_blank" className={utilStyles.listItemTitle}>
+              <div target="_blank" className={styles.homeSubHeading}>
                 coaless
               </div>
             </Link>
-            <div className={utilStyles.lightText}>
+            <div className={styles.about}>
               coalesce reddit posts from one google search
             </div>
           </li>
         </ul>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>training wheels</h2>
-        <ul className={utilStyles.list}>
-          <li className={utilStyles.listItem}>
+      <section className={styles.homeSection}>
+        <h2 className={styles.homeHeading}>training wheels</h2>
+        <ul className={styles.list}>
+          <li className={styles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={utilStyles.listItemTitle}>to do</div>
+              <div className={styles.homeSubHeading}>to do</div>
             </Link>
-            <div className={utilStyles.lightText}>self explanatory</div>
+            <div className={styles.about}>self explanatory</div>
           </li>
-          <li className={utilStyles.listItem}>
+          <li className={styles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={utilStyles.listItemTitle}>calculator</div>
+              <div className={styles.homeSubHeading}>calculator</div>
             </Link>
-            <div className={utilStyles.lightText}>self explanatory</div>
+            <div className={styles.about}>self explanatory</div>
           </li>
-          <li className={utilStyles.listItemTitle}>
+          <li className={styles.homeSubHeading}>
             <Link href="https://github.com/verloxs/etch-a-sketch">
-              <div className={utilStyles.listItemTitle}>etch a sketch</div>
+              <div className={styles.homeSubHeading}>etch a sketch</div>
             </Link>
-            <div className={utilStyles.lightText}>self explanatory</div>
+            <div className={styles.about}>self explanatory</div>
           </li>
         </ul>
       </section>
