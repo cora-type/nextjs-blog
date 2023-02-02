@@ -16,8 +16,8 @@
 .headingLg {
   font-size: 16px;
   line-height: 1.4;
-  margin: 1rem 0;
-  color: white;
+  margin: 0.5rem 0;
+  color: rgb(0, 0, 0);
   letter-spacing: -0.01125rem;
 }
 
@@ -44,6 +44,7 @@
 
 .padding1px {
   padding-top: 1px;
+  margin-bottom: 2rem;
 }
 
 .list {
@@ -53,14 +54,16 @@
 }
 
 .listItem {
-  margin: 0 0 1.25rem;
-  color: #598aff;
+  margin: 16px 0px 0px;
+
+  color: #ffd078;
+  /* color: #ffce44; */
 }
 
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .lightText {

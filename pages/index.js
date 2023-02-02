@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import Abuse from "/public/images/abuse.svg";
+import Image from "next/image";
 
 import Link from "next/link";
 
@@ -17,8 +17,14 @@ export default function Home() {
             <div
               className={`${utilStyles.headingMd} ${utilStyles.padding1px} posts`}
             >
-              Blog
-              {/* <Abuse /> */}
+              blog
+              <Image
+                priority
+                src="/images/absurd.png"
+                height={96}
+                width={96}
+                alt={"abuse"}
+              />
             </div>
           </Link>
         </div>
@@ -40,7 +46,7 @@ export default function Home() {
         </ul>
       </section> */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Projects</h2>
+        <h2 className={utilStyles.headingLg}>projects</h2>
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/coaless">
@@ -48,7 +54,6 @@ export default function Home() {
                 coaless
               </div>
             </Link>
-            <br />
             <div className={utilStyles.lightText}>
               coalesce reddit posts from one google search
             </div>
@@ -56,24 +61,23 @@ export default function Home() {
         </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Training Wheels</h2>
+        <h2 className={utilStyles.headingLg}>training wheels</h2>
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={utilStyles.listItem}>To-Do</div>
+              <div className={utilStyles.listItem}>to do</div>
             </Link>
-            <br />
             <div className={utilStyles.lightText}>self explanatory</div>
           </li>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={utilStyles.listItem}>Calculator</div>
+              <div className={utilStyles.listItem}>calculator</div>
             </Link>
             <div className={utilStyles.lightText}>self explanatory</div>
           </li>
           <li className={utilStyles.listItem}>
             <Link href="https://github.com/verloxs/etch-a-sketch">
-              <div className={utilStyles.listItem}>Etch-a-Sketch</div>
+              <div className={utilStyles.listItem}>etch a sketch</div>
             </Link>
             <div className={utilStyles.lightText}>self explanatory</div>
           </li>

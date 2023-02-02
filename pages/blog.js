@@ -10,7 +10,7 @@ export default function Blog({ allPostsData }) {
   return (
     <Layout>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>blog</h2>
         <div className={utilStyles.lightText}>just noise</div>
         <ul className={`${utilStyles.list} ${utilStyles.spacing}`}>
           {allPostsData.map(({ id, date, title }) => (

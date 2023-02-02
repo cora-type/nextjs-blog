@@ -3,7 +3,7 @@
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(21, 22, 24, 0.5);
+  /* background-color: rgba(21, 22, 24, 0.5); */
   /* position: fixed; */
   width: 100%;
   backdrop-filter: blur(8px);
@@ -34,7 +34,7 @@
 
 .name {
   font-size: 14.24;
-  color: #fafafa;
+  color: #686868;
   line-height: 1.1rem;
   text-transform: capitalize;
   font-weight: 500;
