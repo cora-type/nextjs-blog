@@ -12,7 +12,7 @@ export default function Blog({ allPostsData }) {
       <section className={utilStyles.padding1px}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <div className={utilStyles.lightText}>just noise</div>
-        <ul className={`${utilStyles.list} ${utilStyles.spacing}`}>
+        <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/blog/${id}`}>
