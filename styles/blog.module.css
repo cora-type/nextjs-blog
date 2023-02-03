@@ -1,0 +1,33 @@
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #323232;
+  letter-spacing: -0.01125rem;
+}
+
+.titleAbout {
+  color: #aeb1b1;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin-bottom: 16px;
+}
+
+.heading {
+  color: rgb(66, 76, 79);
+  font-size: 1.25rem;
+}
+
+.subHeading {
+  color: #aeb1b1;
+  font-size: 1.125rem;
+}
+.section {
+  margin-bottom: 3rem;
+}

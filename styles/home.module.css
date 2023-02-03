@@ -1,4 +1,4 @@
-.homeHeading {
+.heading {
   display: flex;
   font-size: 16px;
   line-height: 1.4;
@@ -7,7 +7,7 @@
   letter-spacing: -0.01125rem;
 }
 
-.homeSubHeading {
+.subHeading {
   font-size: 1.2rem;
   margin-bottom: 0;
   color: #ffd078;
@@ -42,4 +42,19 @@
 .blogContainer {
   display: flex;
   align-items: center;
+}
+
+.blogButton {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #323232;
+}
+
+.absurd {
+  translate: -2rem 0rem;
+}
+
+.section {
+  margin-bottom: 3rem;
 }

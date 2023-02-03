@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import styles from "../styles/blog.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 
@@ -9,18 +9,18 @@ import React from "react";
 export default function Blog({ allPostsData }) {
   return (
     <Layout>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <div className="">
-          <h2 className={utilStyles.headingLg}>noise</h2>
-        </div>
-        <div className={utilStyles.lightText}>'blog'</div>
-        <ul className={`${utilStyles.list} ${utilStyles.spacing}`}>
+      <section className={styles.section}>
+        <div className={styles.title}>blog</div>
+        <div className={styles.titleAbout}>for the man in the attic</div>
+      </section>
+      <section className={styles.section}>
+        <ul className={styles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className={styles.listItem} key={id}>
               <Link href={`/blog/${id}`}>
-                <div className={utilStyles.blogTitle}>{title}</div>
+                <div className={styles.heading}>{title}</div>
               </Link>
-              <small className={utilStyles.lightText}>"date"</small>
+              {<small className={styles.subHeading}>{date}</small>}
             </li>
           ))}
         </ul>

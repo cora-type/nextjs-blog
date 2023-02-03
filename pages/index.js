@@ -11,17 +11,18 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section>
+      <section className={styles.section}>
         <div className={styles.blogContainer}>
           <Link href={`/blog/`}>
             <div className={styles.padding1px}>
-              noise
+              <div className={styles.blogButton}>blog</div>
               <Image
+                className={styles.absurd}
                 priority
                 src="/images/absurd.png"
                 height={96}
                 width={96}
-                alt={"abuse"}
+                alt={"absurd"}
               />
             </div>
           </Link>
@@ -43,12 +44,12 @@ export default function Home() {
           ))}
         </ul>
       </section> */}
-      <section className={styles.homeSection}>
-        <h2 className={styles.homeHeading}>projects</h2>
+      <section className={styles.section}>
+        <h2 className={styles.heading}>projects</h2>
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <Link href="https://github.com/verloxs/coaless">
-              <div target="_blank" className={styles.homeSubHeading}>
+              <div target="_blank" className={styles.subHeading}>
                 coaless
               </div>
             </Link>
@@ -58,24 +59,24 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <section className={styles.homeSection}>
-        <h2 className={styles.homeHeading}>training wheels</h2>
+      <section className={styles.section}>
+        <h2 className={styles.heading}>training wheels</h2>
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={styles.homeSubHeading}>to do</div>
+              <div className={styles.subHeading}>to do</div>
             </Link>
             <div className={styles.about}>self explanatory</div>
           </li>
           <li className={styles.listItem}>
             <Link href="https://github.com/verloxs/calculator">
-              <div className={styles.homeSubHeading}>calculator</div>
+              <div className={styles.subHeading}>calculator</div>
             </Link>
             <div className={styles.about}>self explanatory</div>
           </li>
-          <li className={styles.homeSubHeading}>
+          <li className={styles.subHeading}>
             <Link href="https://github.com/verloxs/etch-a-sketch">
-              <div className={styles.homeSubHeading}>etch a sketch</div>
+              <div className={styles.subHeading}>etch a sketch</div>
             </Link>
             <div className={styles.about}>self explanatory</div>
           </li>
