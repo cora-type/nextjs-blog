@@ -48,7 +48,7 @@ export default function Home() {
         <h2 className={styles.heading}>projects</h2>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <Link href="https://github.com/verloxs/coaless">
+            <Link href="https://github.com/cora-type/coaless">
               <div target="_blank" className={styles.subHeading}>
                 coaless
               </div>
@@ -63,19 +63,19 @@ export default function Home() {
         <h2 className={styles.heading}>training wheels</h2>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <Link href="https://github.com/verloxs/calculator">
+            <Link href="https://github.com/cora-type/to-do">
               <div className={styles.subHeading}>to do</div>
             </Link>
             <div className={styles.about}>self explanatory</div>
           </li>
           <li className={styles.listItem}>
-            <Link href="https://github.com/verloxs/calculator">
+            <Link href="https://github.com/cora-type/calculator">
               <div className={styles.subHeading}>calculator</div>
             </Link>
             <div className={styles.about}>self explanatory</div>
           </li>
           <li className={styles.subHeading}>
-            <Link href="https://github.com/verloxs/etch-a-sketch">
+            <Link href="https://github.com/cora-type/etch-a-sketch">
               <div className={styles.subHeading}>etch a sketch</div>
             </Link>
             <div className={styles.about}>self explanatory</div>
