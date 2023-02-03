@@ -2,7 +2,6 @@
   display: flex;
   font-size: 16px;
   line-height: 1.4;
-  margin: 0.5rem 0;
   color: #323232;
   letter-spacing: -0.01125rem;
 }
@@ -11,6 +10,7 @@
   font-size: 1.2rem;
   margin-bottom: 0;
   color: #ffd078;
+  letter-spacing: -0.005625rem;
 }
 
 .homeSection {
@@ -52,7 +52,7 @@
 }
 
 .absurd {
-  translate: -2rem 0rem;
+  translate: -2rem 3rem;
 }
 
 .section {

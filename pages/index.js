@@ -13,19 +13,19 @@ export default function Home() {
       </Head>
       <section className={styles.section}>
         <div className={styles.blogContainer}>
-          <Link href={`/blog/`}>
-            <div className={styles.padding1px}>
+          <div className={styles.padding1px}>
+            <Link href={`/blog/`}>
               <div className={styles.blogButton}>blog</div>
-              <Image
-                className={styles.absurd}
-                priority
-                src="/images/absurd.png"
-                height={96}
-                width={96}
-                alt={"absurd"}
-              />
-            </div>
-          </Link>
+            </Link>
+            <Image
+              className={styles.absurd}
+              priority
+              src="/images/absurd.png"
+              height={96}
+              width={96}
+              alt={"absurd"}
+            />
+          </div>
         </div>
       </section>
       {/* <section className={`${styles.headingMd} ${styles.padding1px}`}>
