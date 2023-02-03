@@ -48,6 +48,26 @@ export default function Home() {
         <h2 className={styles.heading}>projects</h2>
         <ul className={styles.list}>
           <li className={styles.listItem}>
+            <div className={styles.subHeadingContainer}>
+              <Link href="https://github.com/cora-type/rhapsody">
+                <div target="_blank" className={styles.subHeading}>
+                  rhapsody
+                </div>
+              </Link>
+              <div className={styles.subHeadingStatus}>
+                <Image
+                  priority
+                  src="/images/caution.svg"
+                  height={25}
+                  width={25}
+                  alt={"absurd"}
+                />
+              </div>
+            </div>
+
+            <div className={styles.about}>sound by words.</div>
+          </li>
+          <li className={styles.listItem}>
             <Link href="https://github.com/cora-type/coaless">
               <div target="_blank" className={styles.subHeading}>
                 coaless
