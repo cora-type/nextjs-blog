@@ -57,9 +57,9 @@ export default function Home() {
               <div className={styles.subHeadingStatus}>
                 <Image
                   priority
-                  src="/images/caution.svg"
-                  height={25}
-                  width={25}
+                  src="/images/alert.svg"
+                  height={15}
+                  width={15}
                   alt={"absurd"}
                 />
               </div>

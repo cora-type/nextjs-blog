@@ -19,6 +19,8 @@
 }
 
 .subHeadingStatus {
+  margin-left: 0.25rem;
+  margin-top: 1px;
   /* border: 1px solid #ffc40c;
   color: #ffc40c;
   display: inline-flex;
