@@ -18,7 +18,7 @@ export default function Home() {
             <div className={styles.subHeadingContainer}>
               <Link href="https://github.com/cora-type/rhapsody">
                 <div target="_blank" className={styles.subHeading}>
-                  rhapsody
+                  delia (github private, work in progress)
                 </div>
               </Link>
               <div className={styles.subHeadingStatus}>
