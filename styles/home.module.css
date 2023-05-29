@@ -4,6 +4,7 @@
   line-height: 1.4;
   color: #323232;
   letter-spacing: -0.01125rem;
+  font-weight: 400;
 }
 
 .subHeading {
@@ -66,7 +67,7 @@
 }
 
 .blogButton {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 2rem;
   color: #323232;

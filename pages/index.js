@@ -12,39 +12,6 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={styles.section}>
-        <div className={styles.blogContainer}>
-          <div className={styles.padding1px}>
-            <Link href={`/blog/`}>
-              <div className={styles.blogButton}>blog</div>
-            </Link>
-            <Image
-              className={styles.absurd}
-              priority
-              src="/images/absurd.png"
-              height={96}
-              width={96}
-              alt={"absurd"}
-            />
-          </div>
-        </div>
-      </section>
-      {/* <section className={`${styles.headingMd} ${styles.padding1px}`}>
-        <h2 className={styles.homeHeading}>Blog</h2>
-        <ul className={styles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={styles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <div >{title}</div>
-              </Link>
-              <br />
-              <small className={styles.about}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section> */}
-      <section className={styles.section}>
         <h2 className={styles.heading}>projects</h2>
         <ul className={styles.list}>
           <li className={styles.listItem}>
